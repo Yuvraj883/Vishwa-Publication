@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Inter:wght@800&family=Monda:wght@400;700&family=Poppins:wght@100;200;400;500&family=Roboto+Condensed&display=swap');
 body
 {
     background-color: #fec10f;
@@ -13,13 +14,14 @@ body
     font-family: 'Oswald', sans-serif;
 }
 .nav
-{
+{   display: flex;
+    align-items: center;
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #000000;
     border-radius: 10px;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 0px;
     height: 5%;
-    padding: 15px 0px 0px 15px;
+    padding:0px 0px 0px 0px;
 }
 .body1
 {
@@ -59,4 +61,22 @@ body
     text-align: center;
     -webkit-text-fill-color: #ffffff;
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-list{
+  display:flex;
+  align-content: center;
+  margin-left:-10px;
+  
+  
+  
+  
+}
+.nav-list li{
+  text-decoration: none;
+  margin: 4px;
+}
+.nav-list li a{
+  text-decoration: none;
+  color: white;
 }

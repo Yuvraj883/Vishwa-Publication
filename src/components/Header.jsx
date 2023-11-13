@@ -5,7 +5,7 @@ const Header = ()=>{
             <table cellspacing="15">
                 <tr>
                     <td>
-                        <img class="logo" src="./logo.png" alt="vital vishwa publications logo"/>
+                        <img className="logo" src="./logo.png" alt="vital vishwa publications logo"/>
                     </td>
                     <td>
                         <h1 class="title">Vital Vishwa Publications</h1>
