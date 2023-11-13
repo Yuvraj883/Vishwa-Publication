@@ -9,7 +9,7 @@ function App() {
 
  useEffect(()=>{
   setTimeout(()=>{
-    <p>Hello Moto</p>
+    <p className='bg-red-500'>Hello Moto</p>
     setLoader(false);
   },2000)
  });
