@@ -1,7 +1,7 @@
 
 import React from 'react';
-import CompanyAimSection from './CompanyAimSection';
-import FounderSection from './FounderSection';
+import CompanyAimSection from '../components/CompanyAimSection';
+import FounderSection from '../components/FounderSection';
 import Foot from '../components/Foot';
 
 
