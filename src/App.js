@@ -1,6 +1,5 @@
-import './App.css';
+
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import React, { useState, useEffect } from 'react';
 import Books from './components/Books';
@@ -113,9 +112,9 @@ function App() {
           {/* <p>Loading...</p> */}
         </div>
       ) : (
-        <div>
+        <div className="">
           <Header />
-          <Navbar />
+  
           <Carousel images={images} />
           <Books images={books} />
           <Authors images={authors} />

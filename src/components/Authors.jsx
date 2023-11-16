@@ -14,15 +14,15 @@ const Authors = ({ images }) => {
   };
 
   return (
-    <div className="w-[90%] mx-auto mt-8 bg-black rounded-lg shadow-md p-4">
-      <h2 className="text-3xl font-bold text-white text-center mb-4">Featured Authors</h2>
+    <div className="w-[90%] mx-auto mt-8 bg-black rounded-lg shadow-2xl py-20 p-4">
+      <h2 className="text-3xl font-bold text-white text-center mb-14">Featured Authors</h2>
       <div className="flex flex-wrap justify-center">
         {images.slice(0, visibleImages).map((image, index) => (
           <div key={index} className="w-1/4 px-1 mb-4">
             <img
               src={image}
               alt={`Author ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-full h-full  rounded-md object-cover"
             />
           </div>
         ))}
