@@ -26,8 +26,8 @@ const EminentPersonalities = ({ images }) => {
   const totalSlides = Math.ceil(images.length / itemsPerPage);
 
   return (
-    <div className="relative w-[90%] mx-auto mt-8 py-20 p-4 bg-black rounded-lg shadow-md overflow-hidden">
-      <h2 className="text-3xl font-bold text-white text-center mb-4">Eminent Personalities</h2>
+    <div className="relative w-[90%] mx-auto mt-8 py-20 p-4 bg-black rounded-2xl shadow-md overflow-hidden">
+      <h2 className="text-3xl font-bold text-white text-center mb-14">Eminent Personalities</h2>
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{
