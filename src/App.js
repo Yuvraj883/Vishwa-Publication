@@ -15,9 +15,9 @@ import Packages from './components/Packages';
 
 function App() {
   const images = [
-    '/galleryImages/img1.png',
-    '/galleryImages/img2.png',
-    '/galleryImages/img4.png',
+    '/carousel/img1.jpeg',
+    '/carousel/img2.jpeg',
+    '/carousel/img3.jpeg'
   
   ]
   

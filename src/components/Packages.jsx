@@ -5,10 +5,8 @@ const Packages = () => {
     '/packages/p3.png',
     '/packages/p2.png',
     '/packages/p4.png',
-
     '/packages/p1.png',
     '/packages/p5.png',
-    
   ];
 
   return (
@@ -25,10 +23,18 @@ const Packages = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center items-center mt-6">
         <button className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-700 transition-colors duration-300">
-            <a href="https://wa.me/9999762706">Know More</a>
+          <a href="https://wa.me/9999762706">Know More</a>
         </button>
+        <div className="bg-black text-white px-4 py-2 ml-4 rounded-md">
+          <p className="text-xl font-bold text-center mb-0">
+            Want To Become Best Selling Authors?
+          </p>
+          <button className="text-yellow-500 ml-2 hover:underline">
+            Contact Us
+          </button>
+        </div>
       </div>
     </div>
   );
