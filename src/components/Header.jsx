@@ -5,7 +5,7 @@ const Header = () => {
         <div className="logo">
           {" "}
           <img
-            src="./logo.png"
+            src="/logo.png"
             className="w-[150px] "
             alt="vital vishwa publications logo"
           />
