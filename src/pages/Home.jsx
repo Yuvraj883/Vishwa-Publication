@@ -1,4 +1,4 @@
-// import Header from "../components/Header";
+import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import React, { useState, useEffect } from "react";
 import Books from "../components/Books";
@@ -8,9 +8,9 @@ import { css } from "@emotion/react";
 import { BarLoader } from "react-spinners";
 import EminentPersonalities from "../components/EminentPersonalities";
 import Distributors from "../components/Distributors";
-// import Foot from "../components/Foot";
+import Foot from "../components/Foot";
 import Packages from "../components/Packages";
-// import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
 import BestSelling from "../components/BestSelling";
 
 const Home = ()=> {
@@ -114,8 +114,8 @@ const Home = ()=> {
         </div>
       ) : (
         <div className="overflow-hidden">
-          {/* <Header></Header>
-          <Navbar /> */}
+           <Header></Header>
+          <Navbar />
           <Carousel images={images} />
           <Books images={books} />
           <Authors images={authors} />
@@ -126,7 +126,7 @@ const Home = ()=> {
           <Distributors></Distributors>
           <Packages></Packages>
 <BestSelling></BestSelling>
-          {/* <Foot></Foot> */}
+          <Foot></Foot>
         </div>
       )}
     </>

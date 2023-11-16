@@ -1,21 +1,21 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import App from './App';
+import Home from './pages/Home';
+import About from './pages/About';
+// import RestaurantPage from './components/RestaurantPage';
+import ErrorPage from './pages/ErrorPage';
 
-// Lazy-loaded components
-const Home = lazy(() => import('./pages/Home'));
-const AboutUs = lazy(() => import('./pages/About'));
-
-const Routers = () => {
-  return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
-        </Routes>
-      </Suspense>
-    </Router>
-  );
-};
-
-export default Routers;
+const router = createBrowserRouter([
+    {
+        path:'/',
+        element: <Home/>,
+        errorElement:<ErrorPage/>,
+       
+    },
+    {
+        path:'about',
+        element:<About/>,
+        errorElement:<ErrorPage/>
+    }
+]);
+export default router;
