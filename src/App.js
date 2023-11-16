@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import React, { useState, useEffect } from 'react';
 import Books from './components/Books';
+import Authors from './components/Authors';
 
 
 
@@ -20,6 +21,41 @@ const images = [
   '/galleryImages/img1.png',
   '/galleryImages/img2.png',
   '/galleryImages/img3.png'
+
+]
+
+const authors = [
+  '/authors/auth1.png',
+  '/authors/auth2.png',
+  '/authors/auth3.png',
+  '/authors/auth4.png',
+  '/authors/auth5.png',
+  '/authors/auth6.png',
+  '/authors/auth7.png',
+  '/authors/auth8.png',
+  '/authors/auth9.png',
+  '/authors/auth10.png',
+  '/authors/auth11.png',
+  '/authors/auth12.png',
+  '/authors/auth13.png',
+  '/authors/auth14.png',
+  '/authors/auth15.png',
+  '/authors/auth16.png',
+  '/authors/auth17.png',
+  '/authors/auth18.png',
+  '/authors/auth19.png',
+  '/authors/auth20.png',
+  '/authors/auth21.png',
+  '/authors/auth22.png',
+  '/authors/auth23.png',
+  '/authors/auth24.png',
+  '/authors/auth25.png',
+  '/authors/auth26.png',
+
+
+
+
+  
 
 ]
 
@@ -62,6 +98,7 @@ const books = [
    <Navbar></Navbar>
    <Carousel images={images}></Carousel>
    <Books images={books}></Books>
+   <Authors images={authors}></Authors>
 
     </div>
   }
