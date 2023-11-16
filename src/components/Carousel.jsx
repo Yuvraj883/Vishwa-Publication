@@ -22,7 +22,7 @@ const Carousel = ({ images }) => {
   }, [currentSlide]);
 
   return (
-    <div className="relative w-[90%] h-[70%] mx-auto mt-8 overflow-hidden bg-white rounded-lg shadow-md">
+    <div className="relative w-[90%] h-[70%] mx-auto mt-8 p-4 overflow-hidden bg-white rounded-lg shadow-md">
       <div
         className="flex items-center justify-center transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)`, width: `${images.length}00%`, height: '70%' }}
