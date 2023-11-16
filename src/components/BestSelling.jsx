@@ -5,7 +5,7 @@ const BestSelling = ()=>{
           <p className="text-3xl font-bold text-center mb-0">
             Want To Become Best Selling Authors?
           </p>
-          <button className="text-white bg-red-500 :hover-bg-red-500 ml-2 hover:underline">
+          <button className="text-white px-4 py-2 rounded-md bg-red-500 hover:bg-red-700 ml-2 hover:underline">
             Contact Us
           </button>
         </div>

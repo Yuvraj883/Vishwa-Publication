@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { IoIosArrowForward ,IoIosArrowBack} from "react-icons/io";
-
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const Carousel = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % 2);
+    setCurrentSlide((prev) => (prev + 1) % images.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + 2) % 2);
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
   };
 
   useEffect(() => {
@@ -38,7 +37,7 @@ const Carousel = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className=" object-cover rounded-lg"
+              className="object-cover rounded-lg"
             />
           </div>
         ))}
@@ -47,14 +46,13 @@ const Carousel = ({ images }) => {
         onClick={prevSlide}
         className="absolute top-1/2 ml-1 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
       >
-       <IoIosArrowBack/>
+        <IoIosArrowBack />
       </button>
       <button
         onClick={nextSlide}
         className="absolute top-1/2 mr-1 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
       >
-       <IoIosArrowForward />
-
+        <IoIosArrowForward />
       </button>
       <div className="flex justify-center mt-4">
         {images.map((_, index) => (
