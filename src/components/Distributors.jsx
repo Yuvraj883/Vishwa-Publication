@@ -1,6 +1,8 @@
 import React from 'react';
+import library from '../images/library.png'
 
 const Distributors = () => {
+
   const distributorsImages = [
     '/brands/brand1.jpeg',
     '/brands/brand2.png',
@@ -17,8 +19,9 @@ const Distributors = () => {
   ];
 
   return (
-    <div className="relative w-[90%] mx-auto mt-8 bg-library-bg rounded-lg shadow-md overflow-hidden">
-      <h2 className="text-3xl font-bold text-white text-center mb-4">Our Distributors</h2>
+    <div className="relative w-[90%] h-[70vh] flex flex-col items-center justify-center mx-auto mt-8 bg-cover bg-center rounded-lg shadow-md overflow-hidden" style={{ backgroundImage: 'url(../images/library.png)' }}>
+        <img className='absolute w-screen -z-10 h-screen blur-sm' src={library} alt="library"/>
+      <h2 className="text-4xl font-bold text-white text-center mb-4">Our Distributors & Event Partners</h2>
       <div className="flex flex-wrap">
         {distributorsImages.map((image, index) => (
           <div key={index} className="w-1/5 p-2">
