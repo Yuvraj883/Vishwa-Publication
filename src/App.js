@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Carousel from './components/Carousel';
 import React, { useState, useEffect } from 'react';
+import Books from './components/Books';
 
 
 
@@ -19,6 +20,25 @@ const images = [
   '/galleryImages/img1.png',
   '/galleryImages/img2.png',
   '/galleryImages/img3.png'
+
+]
+
+const books = [
+  'books/book1.png',
+  'books/book2.png',
+  'books/book3.png',
+  'books/book4.png',
+  'books/book5.png',
+  'books/book6.png',
+  'books/book7.png',
+  'books/book8.png',
+  'books/book9.png',
+  'books/book10.png',
+  'books/book11.png',
+  'books/book12.png',
+  'books/book13.png',
+  'books/book14.png'
+
 
 ]
 
@@ -41,7 +61,7 @@ const images = [
       <Header></Header>
    <Navbar></Navbar>
    <Carousel images={images}></Carousel>
-   
+   <Books images={books}></Books>
 
     </div>
   }
