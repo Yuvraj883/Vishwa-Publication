@@ -2,15 +2,15 @@ import React from 'react';
 
 const Distributors = () => {
   const distributorsImages = [
-    '/brands/brand1.png',
+    '/brands/brand1.jpeg',
     '/brands/brand2.png',
-    '/brands/brand3.png',
+    '/brands/brand3.jpeg',
     '/brands/brand4.png',
-    '/brands/brand5.png',
+    '/brands/brand5.jpeg',
     '/brands/brand6.png',
-    '/brands/brand7.png',
+    '/brands/brand7.jpeg',
     '/brands/brand8.png',
-    '/brands/brand9.png',
+    '/brands/brand9.jpeg',
     '/brands/brand10.png',
 
     // Add more image URLs as needed
