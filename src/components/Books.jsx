@@ -42,7 +42,7 @@ const Books = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-[500px] h-[300px] object-cover rounded-lg"
             />
           </div>
         ))}
@@ -52,7 +52,7 @@ const Books = ({ images }) => {
         className="absolute top-1/2 ml-1 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
       >
     
-       < IoIosArrowForward/>
+       < IoIosArrowBack/>
       </button>
       <button
         onClick={nextSlide}

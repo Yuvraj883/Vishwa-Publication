@@ -12,7 +12,7 @@ const Packages = () => {
   ];
 
   return (
-    <div className="relative w-[90%] mx-auto mt-8 bg-gray-100 p-8 rounded-lg shadow-md">
+    <div className="relative w-[90%] mx-auto mt-8 bg-gray-100 p-8 rounded-2xl shadow-md">
       <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">Our Packages</h2>
       <div className="flex flex-wrap">
         {packageImages.map((image, index) => (
