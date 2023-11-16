@@ -10,6 +10,8 @@ import { css } from '@emotion/react';
 import { BarLoader } from 'react-spinners';
 import EminentPersonalities from './components/EminentPersonalities';
 import Distributors from './components/Distributors';
+import Foot from './components/Foot';
+import Packages from './components/Packages';
 
 function App() {
   const images = [
@@ -120,6 +122,8 @@ function App() {
           <WhatsApp phoneNumber={9999762706} />
           <EminentPersonalities images={eminentPersonalities}></EminentPersonalities>
           <Distributors></Distributors>
+          <Packages></Packages>
+          <Foot></Foot>
         </div>
       )}
     </>
