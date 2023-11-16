@@ -19,7 +19,7 @@ const WhatsApp = ({ phoneNumber }) => {
         onClick={openWhatsAppChat}
         className="bg-green-500 text-white p-4 rounded-full focus:outline-none"
       >
-        {/* You can replace this with a WhatsApp icon */}
+        
       <img
       className='h-12 w-12'
        src = "/whatsapp-icon.png" alt="whatsapp-icon" />
