@@ -15,7 +15,7 @@ const EminentPersonalities = ({ images }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 500);
+    }, 1000);
 
     return () => {
       clearInterval(intervalId);
