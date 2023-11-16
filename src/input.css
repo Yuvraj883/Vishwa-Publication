@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Inter:wght@800&family=Monda:wght@400;700&family=Poppins:wght@100;200;400;500&family=Roboto+Condensed&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: rgb(255, 221, 0);
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }

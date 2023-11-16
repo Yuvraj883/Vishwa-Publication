@@ -1,14 +1,15 @@
-const Navbar = () => {
-    return (
-        <>
-            <nav className="nav text-red-500">
-                <ul className="nav-list">
-                    <li ><a  href="index.html">Home</a></li>
-                    <li ><a  href="about_us.html">About us</a></li>
-                    <li ><a  href="courses.html">Courses</a></li>
-                </ul>
-            </nav>
-        </>
-    )
+function Navbar() {
+    return ( <>
+    <div className="navbar">
+    <div className="text-white bg-black mx-1 md:mx-[20px] rounded-2xl p-4 list-none flex items-center gap-4">
+     
+     <li ><a  href="index.html">Home</a></li>
+     <li ><a  href="about_us.html">About us</a></li>
+     <li ><a  href="courses.html">Courses</a></li>
+
+</div>
+    </div>
+    </> );
 }
-export default Navbar; 
+
+export default Navbar;

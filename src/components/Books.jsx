@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { IoIosArrowForward ,IoIosArrowBack} from "react-icons/io";
 
 const Books = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,8 +26,8 @@ const Books = ({ images }) => {
   const totalSlides = Math.ceil(images.length / itemsPerPage);
 
   return (
-    <div className="relative w-[90%] mx-auto mt-8 overflow-hidden bg-black rounded-lg shadow-md p-4">
-      <h2 className="text-3xl font-bold text-white text-center mb-2">Our Published Books</h2>
+    <div className="relative w-[90%] mx-auto mt-8 overflow-hidden bg-black rounded-2xl py-20 shadow-md p-4">
+      <h2 className="text-3xl font-bold text-white text-center mb-10">Our Published Books</h2>
       <h3 className="text-lg text-gray-300 text-center mb-4">Available on Amazon</h3>
       <div
         className="flex transition-transform duration-500 ease-in-out"
@@ -41,22 +42,23 @@ const Books = ({ images }) => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover rounded-lg"
+              className="w-[500px] h-[300px] object-cover rounded-lg"
             />
           </div>
         ))}
       </div>
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
+        className="absolute top-1/2 ml-1 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
       >
-        &lt;
+    
+       < IoIosArrowBack/>
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
+        className="absolute top-1/2 mr-1 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none z-10"
       >
-        &gt;
+     <IoIosArrowForward/>
       </button>
       <div className="flex justify-center mt-4">
         {Array.from({ length: totalSlides }).map((_, index) => (
