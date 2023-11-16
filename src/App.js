@@ -9,12 +9,13 @@ import WhatsApp from './components/Whatsapp';
 import { css } from '@emotion/react';
 import { BarLoader } from 'react-spinners';
 import EminentPersonalities from './components/EminentPersonalities';
+import Distributors from './components/Distributors';
 
 function App() {
   const images = [
     '/galleryImages/img1.png',
     '/galleryImages/img2.png',
-    '/galleryImages/img3.png'
+    '/galleryImages/img4.png',
   
   ]
   
@@ -118,6 +119,7 @@ function App() {
           <Authors images={authors} />
           <WhatsApp phoneNumber={9999762706} />
           <EminentPersonalities images={eminentPersonalities}></EminentPersonalities>
+          <Distributors></Distributors>
         </div>
       )}
     </>
