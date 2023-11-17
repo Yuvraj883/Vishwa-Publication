@@ -1,7 +1,7 @@
-// Import necessary modules from 'react'
+
 import React from 'react';
 
-// Define the FounderSection component
+
 const FounderSection = ({ name, description, imageSrc }) => {
   return (
     <div className="bg-white p-8">
@@ -22,5 +22,5 @@ const FounderSection = ({ name, description, imageSrc }) => {
   );
 };
 
-// Export the FounderSection component
+
 export default FounderSection;
