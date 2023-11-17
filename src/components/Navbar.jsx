@@ -16,7 +16,7 @@
 
 // export default Navbar;
 
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 function Navbar() {
     return (<>
         <div className="navbar">
@@ -28,7 +28,9 @@ function Navbar() {
                 <Link to="/gallery">Gallery</Link>
 
             </div>
+            
         </div>
+        <Outlet/>
     </>);
 }
 
